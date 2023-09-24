@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+
+body {
+  font-family: "Exo 2", sans-serif;
+}
+.container {
+  text-align: center;
+  width: 150px;
+  height: 190px;
+  background-color: #d2dbdc;
+  box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
+}
+
+#imgContainer {
+  margin-top: 80px;
+  width: 140px;
+  height: 80px;
+}
+
+img {
+  width: 40px;
+  border-radius: 10px;
+}
+
+img:hover {
+  animation: zoom-in-zoom-out 1.5s ease;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+#cpuImg {
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#buttonrestart {
+  margin-top: 10px;
+}
+
+#restart {
+  border-radius: 5px;
+  border: 1;
+  background-color: green;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#restart:hover {
+  animation: zoom-in-zoom-out 1.5s ease;
+}
+
+.wiggle {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+#score {
+  height: 30px;
+  margin-top: 30px;
+}
